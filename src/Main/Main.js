@@ -2,9 +2,6 @@ import React from 'react'
 import GoogleAutoComplete from "react-google-autocomplete";
 
 
-
-
-
 const Main = () => {
     const callbackFunc = (autoCompleteData) => {
     console.log(autoCompleteData);
@@ -25,7 +22,8 @@ const Main = () => {
                         <span>
                             <img src="	https://www.remoteroofing.com/assets/svgs/location.svg" alt="location" />
                         </span>
-                        <GoogleAutoComplete
+                        <div className="main-address-field">
+                            <GoogleAutoComplete
                         keyForAPI="YOUR_API_KEY"
                         fieldsByUser={{
                         streetAddress: "route",
@@ -35,11 +33,16 @@ const Main = () => {
                         postalcode: "postal_code",
                         country: "country" }}
                         callbackfunction={callbackFunc}
+                        className="google-add"
                      />
                     </div>
-                </article>
-            </div>
-        </section>
+                     <button class="button main-address-btn button-primary">
+                     Get an instant estimate
+                    </button> 
+                </div>
+            </article>
+        </div>
+     </section>
     )
 
 }

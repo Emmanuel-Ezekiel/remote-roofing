@@ -184,7 +184,7 @@ p {
 .nav-links {
   display: none;
 }
-.signin-btn {
+.number-btn {
   display: none;
 }
 
@@ -209,10 +209,12 @@ p {
   .toggle-btn {
     display: none;
   }
-  .signin-btn {
+  .number-btn {
     display: inline-block;
+    display: flex;
     background: none;
   }
+
   .nav-links {
     display: block;
     justify-self: center;
@@ -258,7 +260,7 @@ p {
   display: grid;
   align-items: center;
   padding: 1.5rem !important;
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-weight: 800;
   line-height: 150%;
   color: white;
@@ -276,4 +278,56 @@ p {
   line-height: 1.5;
   text-align: left;
   font-size: 16px !important;
+}
+
+.main-address-btn {
+  padding: 0.6rem 1rem !important;
+  font-size: 12px;
+}
+
+.button-primary {
+  background-color: #0158b7;
+  transition: all 0.3s;
+}
+
+.button {
+  display: flex;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.main-address {
+  margin-top: 1%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  border: 2px solid #859bb2;
+  padding: 0.4rem;
+  width: 110% !important;
+}
+
+.main-address-field {
+  height: 100%;
+  flex: 7;
+}
+
+.main-address .main-address-field .google-add {
+  background: transparent;
+  height: 100%;
+  font-size: 1rem;
+  width: 94%;
+  border: none;
+  padding: 10px;
+  outline: none;
+}
+
+.main-address button {
+  border-radius: 15px;
 }
